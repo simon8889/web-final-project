@@ -20,25 +20,25 @@ const MainLayout = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link to="/">
+                <a href="#inicio">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Inicio
                   </NavigationMenuLink>
-                </Link>
+                </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link to="/servicios">
+                <a href="#precios">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    Servicios
+                    Precios
                   </NavigationMenuLink>
-                </Link>
+                </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link to="/contacto">
+                <a href="#contacto">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Contacto
                   </NavigationMenuLink>
-                </Link>
+                </a>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

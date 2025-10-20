@@ -14,7 +14,7 @@ import { Magnetic } from '@/components/ui/shadcn-io/magnetic'
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative lg:min-h-[900px] pt-6 pb-10 sm:pt-6 sm:pb-16 lg:pb-24">
+    <section id="inicio" className="relative pt-8 pb-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="max-w-xl mx-auto text-center lg:text-left">
@@ -39,7 +39,7 @@ const Hero = () => {
               <span className="inline-flex items-center">
                 <a
                   href="#"
-                  className="inline-flex items-center px-6 py-4 mt-0 font-semibold text-white transition-all duration-200 bg-zinc-800 rounded-lg sm:mt-12 hover:bg-zinc-700 focus:bg-zinc-700"
+                  className="inline-flex items-center px-6 py-2 mt-0 mb-0 font-semibold text-white transition-all duration-200 bg-zinc-800 rounded-lg sm:mt-12 hover:bg-zinc-700 focus:bg-zinc-700"
                   role="button"
                 >
                   Regístrate Ahora
