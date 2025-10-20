@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button'
 const MainLayout = () => {
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <header>
+      <header className="z-100 bg-black">
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
           <Link to="/" className="text-xl font-bold">
             EsteBanquito
@@ -20,21 +20,21 @@ const MainLayout = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <a href="#inicio">
+                <a href="/#inicio">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Inicio
                   </NavigationMenuLink>
                 </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <a href="#precios">
+                <a href="/#precios">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Precios
                   </NavigationMenuLink>
                 </a>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <a href="#contacto">
+                <a href="/#contacto">
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Contacto
                   </NavigationMenuLink>
@@ -48,7 +48,7 @@ const MainLayout = () => {
               <Link to="/auth/login">Iniciar Sesión</Link>
             </Button>
             <Button asChild>
-              <Link to="/auth/register">Registrarse</Link>
+              <Link to="/auth/signin">Registrarse</Link>
             </Button>
           </div>
         </nav>
@@ -58,7 +58,7 @@ const MainLayout = () => {
         <Outlet />
       </main>
 
-      <footer>
+      <footer className="z-100">
         <div className="mx-auto max-w-7xl px-4 py-8 text-center text-sm text-muted-foreground">
           <p>© 2025 EsteBanquito. Todos los derechos reservados.</p>
         </div>
