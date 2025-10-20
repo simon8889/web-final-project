@@ -48,7 +48,7 @@ const MainLayout = () => {
               <Link to="/auth/login">Iniciar Sesión</Link>
             </Button>
             <Button asChild>
-              <Link to="/auth/register">Registrarse</Link>
+              <Link to="/auth/signin">Registrarse</Link>
             </Button>
           </div>
         </nav>
