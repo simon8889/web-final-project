@@ -14,7 +14,7 @@ import { Magnetic } from '@/components/ui/shadcn-io/magnetic'
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative pt-6 pb-6 sm:pt-6 sm:pb-6 lg:pb-0">
+    <section id="inicio" className="relative pt-8 pb-16">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="max-w-xl mx-auto text-center lg:text-left">

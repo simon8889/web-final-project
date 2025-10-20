@@ -1,6 +1,6 @@
-'use client';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+'use client'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import {
   Card,
   CardContent,
@@ -8,16 +8,15 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { ArrowRight, BadgeCheck } from 'lucide-react';
+} from '@/components/ui/card'
+import { cn } from '@/lib/utils'
+import { ArrowRight, BadgeCheck } from 'lucide-react'
 
 const plans = [
   {
     id: 'estudiahambre',
     name: 'Estudia Hambre',
-    description:
-      'Para los que viven del corrientazo y el tinto aguado.',
+    description: 'Para los que viven del corrientazo y el tinto aguado.',
     features: [
       'Transferencias ilimitadas entre parceros',
       'Sin cuota de manejo (así como tu bolsillo)',
@@ -53,26 +52,23 @@ const plans = [
     ],
     cta: 'Hablar con los jefes',
   },
-];
+]
 
 const Pricing = () => {
   return (
-    <section id="precios" className="not-prose flex flex-col gap-16 px-8 py-24 text-center">
-      <div className="flex flex-col items-center justify-center gap-8">
-        <h1 className="mb-0 text-balance font-medium text-5xl tracking-tighter!">
+    <section id="precios" className="not-prose flex flex-col gap-8 px-4 py-16 text-center">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <h1 className="mb-0 text-balance font-medium text-3xl tracking-tight">
           Planes que se acomodan a tu bolsillo
         </h1>
-        <p className="mx-auto mt-0 mb-0 max-w-2xl text-balance text-lg text-muted-foreground">
-          Ya sea que vivas del corrientazo o te llegue mesada completa, 
-          tenemos el plan perfecto para vos. Sin letra chiquita ni sorpresas.
+        <p className="mx-auto mt-0 mb-0 max-w-2xl text-balance text-base text-muted-foreground">
+          Ya sea que vivas del corrientazo o te llegue mesada completa, tenemos el plan perfecto
+          para vos. Sin letra chiquita ni sorpresas.
         </p>
-        <div className="mt-8 grid w-full max-w-4xl gap-4 lg:grid-cols-3">
-          {plans.map((plan) => (
+        <div className="mt-4 grid w-full max-w-4xl gap-2 lg:grid-cols-3">
+          {plans.map(plan => (
             <Card
-              className={cn(
-                'relative w-full text-left',
-                plan.popular && 'ring-2 ring-primary'
-              )}
+              className={cn('relative w-full text-left p-4', plan.popular && 'ring-2 ring-primary')}
               key={plan.id}
             >
               {plan.popular && (
@@ -80,18 +76,16 @@ const Pricing = () => {
                   Más Popular
                 </Badge>
               )}
-              <CardHeader>
-                <CardTitle className="font-medium text-xl">
-                  {plan.name}
-                </CardTitle>
+              <CardHeader className="pb-2">
+                <CardTitle className="font-medium text-lg">{plan.name}</CardTitle>
                 <CardDescription>
-                  <p>{plan.description}</p>
+                  <p className="text-xs">{plan.description}</p>
                 </CardDescription>
               </CardHeader>
-              <CardContent className="grid gap-2">
+              <CardContent className="grid gap-1 py-0">
                 {plan.features.map((feature, index) => (
                   <div
-                    className="flex items-center gap-2 text-muted-foreground text-sm"
+                    className="flex items-center gap-1 text-muted-foreground text-xs"
                     key={index}
                   >
                     <BadgeCheck className="h-4 w-4" />
@@ -99,13 +93,13 @@ const Pricing = () => {
                   </div>
                 ))}
               </CardContent>
-              <CardFooter>
+              <CardFooter className="pt-2">
                 <Button
-                  className="w-full"
+                  className="w-full h-8 text-xs"
                   variant={plan.popular ? 'default' : 'secondary'}
                 >
                   {plan.cta}
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
               </CardFooter>
             </Card>
@@ -113,7 +107,7 @@ const Pricing = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Pricing;
+export default Pricing
