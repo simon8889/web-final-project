@@ -50,7 +50,7 @@ const plans = [
       'Transferencias automáticas de mesada',
       'Soporte 24/7 (pero tus papás deciden)',
     ],
-    cta: 'Hablar con los jefes',
+    cta: 'Hablar con los cuchos',
   },
 ]
 
