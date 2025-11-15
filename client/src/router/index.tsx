@@ -2,10 +2,12 @@ import { createBrowserRouter } from 'react-router'
 
 import RootLayout from '@/components/layout/RootLayout'
 import MainLayout from '@/components/layout/MainLayout'
+import ProtectedRoute from '@/components/ProtectedRoute'
 
 import HomePage from '@/pages/public/HomePage'
 import LoginPage from '@/pages/public/LoginPage'
 import SignInPage from '@/pages/public/SignInPage'
+import DashboardPage from '@/pages/dashboard/DashboardPage'
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ export const router = createBrowserRouter([
           {
             path: 'auth/signin',
             element: <SignInPage />,
+          },
+          {
+            path: 'dashboard',
+            element: (
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            ),
           },
         ],
       },
